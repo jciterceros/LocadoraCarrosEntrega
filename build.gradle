@@ -1,0 +1,19 @@
+apply plugin: 'java'
+apply plugin: 'jacoco'
+apply plugin: 'application'
+
+
+application {
+    mainClass = 'LocadoraCarros.App'
+    applicationName = 'LocadoraCarros'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.postgresql:postgresql:42.7.1'
+
+    testImplementation     'junit:junit:4.13'
+}
